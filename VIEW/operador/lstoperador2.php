@@ -1,10 +1,10 @@
 <?php
 
-use DAL\dalOperador;
+use BLL\bllOperador;
 
-  include_once '../../DAL/dalOperador.php'; 
-  $dal = new \dal\dalOperador(); 
-  $lstOperador = $dal->Select(); 
+  include_once '../../BLL/blloperador.php'; 
+  $bll = new \BLL\bllOperador; 
+  $lstOperador = $bll->Select(); 
 ?>
 
 
@@ -24,7 +24,6 @@ use DAL\dalOperador;
 <body>
     <h1>Listar Operadores</h1>
 
-  
 
     <table class="striped red lighten-2" >
         <tr>
@@ -37,10 +36,10 @@ use DAL\dalOperador;
             foreach ($lstOperador as $operador){
         ?>
             <tr>
-                <td><?php echo $operador['id']; ?></td>
-                <td><?php echo $operador['nome'] ?></td>
-                <td><?php echo $operador['aniversario']; ?></td>
-                <td><?php echo "R$" . number_format($operador['salario'], 2, ",", "."); ?></td>
+                <td><?php echo $operador->getId(); ?></td>
+                <td><?php echo $operador->getNome(); ?></td>
+                <td><?php echo $operador->getAniversario(); ?></td>
+                <td><?php echo "R$" . number_format($operador->getSalario(), 2, ",", "."); ?></td>
 
                 
             </tr>
