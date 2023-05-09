@@ -8,9 +8,14 @@
             $dal = new \Dal\dalOperador(); 
             //linhas de código com regras de negócio
            
-           
-           
             return $dal->Select();
+        }
+
+        public function Insert (\MODEL\Operador $operador){
+            
+            echo "nome: ".  $operador->getNome() . "</br>";
+            echo "aniversario: ". $operador->getAniversario(). "</br>";
+            echo "salario: " . $operador->getSalario() . "</br>";
         }
     }
 

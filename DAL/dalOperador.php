@@ -13,7 +13,7 @@
           $result = $con->query($sql); 
           $con = Conexao::desconectar();
           //return $result; não vai retornar como linha e sim como objeto
-
+          
           foreach ($result as $linha){
             $operador = new \MODEL\Operador(); 
 

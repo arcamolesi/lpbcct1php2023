@@ -1,4 +1,5 @@
 <?php
+    //aula crud sem camadas
     echo __DIR__; 
      
     include 'C:\xampp\htdocs\lpbcct1php2023\DAL\conexao.php';

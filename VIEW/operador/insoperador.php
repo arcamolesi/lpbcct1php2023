@@ -38,19 +38,19 @@
                   <label for="salario" class="black-text bold" >Salário</label>
               </div>
               <div class="brown lighten-3 center col s12">
-        <br>
-        <button class="waves-effect waves-light btn green" type="submit">
-            Gravar <i class="material-icons">save</i>
-        </button>
-        <button class="waves-effect waves-light btn red" type = "reset">
-            Limpar <i class="material-icons">clear_all</i>
-        </button>
-        <button class="waves-effect waves-light btn blue" type="button">
-            Voltar <i class="material-icons">arrow_back</i>
-        </button>
-        <br>
-        <br>
-      </div>
+                <br>
+             <button class="waves-effect waves-light btn green" type="submit">
+                   Gravar <i class="material-icons">save</i>
+                </button>
+               <button class="waves-effect waves-light btn red" type = "reset">
+                   Limpar <i class="material-icons">clear_all</i>
+                </button>
+                <button class="waves-effect waves-light btn blue" type="button">
+              Voltar <i class="material-icons">arrow_back</i>
+              </button>
+                <br>
+                <br>
+             </div>
       
       
             </form>
