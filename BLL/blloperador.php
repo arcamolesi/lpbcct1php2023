@@ -12,6 +12,15 @@
         }
 
 
+        public function SelectID (int $id){
+            $dal = new  \Dal\dalOperador(); 
+            //linhas de código com regras de negócio
+           
+            return $dal->SelectID($id);
+        }
+
+        
+
         public function Insert (\MODEL\Operador $operador){
            
             //echo "Nome: {$operador->getNome()} </br>"; 

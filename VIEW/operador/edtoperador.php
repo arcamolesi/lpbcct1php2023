@@ -1,5 +1,5 @@
 <?php
-    include_once 'C:\xampp\htdocs\lpadst1php2023\BLL\blloperador.php';
+    include_once 'C:\xampp\htdocs\lpbcct1php2023\BLL\blloperador.php';
     $id = $_GET['id']; 
 
     $bll = new  \BLL\bllOperador(); 
