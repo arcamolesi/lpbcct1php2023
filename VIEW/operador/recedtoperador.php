@@ -4,12 +4,13 @@
 
    $operador = new \MODEL\Operador(); 
    
+   $operador->setId($_POST['txtID']);
    $operador->setNome($_POST['txtNome']);
    $operador->setAniversario($_POST['txtAniversario']);
    $operador->setSalario($_POST['txtSalario']); 
 
    $bll = new \BLL\bllOperador(); 
-   $bll->Insert($operador); 
+   $bll->Update($operador); 
    
    header("location: lstoperador2.php");
   

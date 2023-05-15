@@ -11,11 +11,29 @@
             return $dal->Select();
         }
 
+
         public function Insert (\MODEL\Operador $operador){
-            
-            echo "nome: ".  $operador->getNome() . "</br>";
-            echo "aniversario: ". $operador->getAniversario(). "</br>";
-            echo "salario: " . $operador->getSalario() . "</br>";
+           
+            //echo "Nome: {$operador->getNome()} </br>"; 
+            //echo "Aniversario: {$operador->getAniversario()} </br>"; 
+           // echo "Salario: {$operador->getSalario()} </br>"; 
+
+           // regras de negócios devem ser implementadas neste local.
+
+           $dal = new \DAL\dalOperador(); 
+
+           $dal->Insert($operador);
+          
+        }
+
+        public function Update (\MODEL\Operador $operador){
+
+           // regras de negócios devem ser implementadas neste local.
+
+           $dal = new \DAL\dalOperador(); 
+
+           $dal->Update($operador);
+          
         }
     }
 
