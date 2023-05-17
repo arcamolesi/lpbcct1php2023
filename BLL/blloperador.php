@@ -44,6 +44,17 @@
            $dal->Update($operador);
           
         }
+
+
+        public function Delete (int $id){
+
+            // regras de negócios devem ser implementadas neste local.
+ 
+            $dal = new \DAL\dalOperador(); 
+ 
+            $dal->Delete($id);
+           
+         }
     }
 
 

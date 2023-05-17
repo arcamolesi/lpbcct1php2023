@@ -6,8 +6,6 @@
     $operador = $bll->SelectID($id);
     
     echo $operador->getNome(); 
-
-
 ?>
 
 
