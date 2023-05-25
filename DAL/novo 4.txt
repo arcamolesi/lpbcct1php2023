@@ -1,0 +1,20 @@
+ALGORITMO MESA_B;
+VAR
+ x, z, s, a, b: inteiros; 
+INICIO
+    x = 0;
+    a= 5 - x;
+    b = 3 + x;
+    FAÇA {
+        x = x + 1;
+        z = 0;
+        ENQUANTO (z < x){
+            z = z + 1;
+            a = a - z;
+            b = b + z;
+            s = s + (a-b);
+			IMPRIMA x, z, a, b; 
+        }
+    } ENQUANTO (x<3);
+    IMPRIMA S;
+FIM. 

@@ -26,9 +26,11 @@ $lstOperador = $bll->Select();
 </head>
 
 <body>
+
+   <?php include_once '../menu.php';?>
     <h1>Listar Operadores</h1>
 
-    <table class="striped red lighten-2">
+    <table class="striped yellow lighten-2">
         <tr>
             <th>ID</th>
             <th>NOME</th>
@@ -68,13 +70,15 @@ $lstOperador = $bll->Select();
                 </td>
 
             </tr>
-        <?php
+       <?php
         }
         ?>
-
+      
 
     </table>
-
+ 
+    <br/>
+    <?php include_once '../footer.php';?>
 </body>
 
 </html>

@@ -26,6 +26,7 @@ $operador = $bll->SelectID($id);
 </head>
 
 <body>
+    <?php include_once '../menu.php'; ?>
     <div class="container teal lighten-5 black-text col s12">
         <div class="center orange">
             <h1>Datelhes de Operador</h1>
@@ -53,19 +54,16 @@ $operador = $bll->SelectID($id);
 
                 <div class="brown lighten-3 center col s12">
                     <br>
-                    <button class="waves-effect waves-light btn orange" type="button"
-                          onclick="JavaScript:location.href='edtoperador.php?id=' +
+                    <button class="waves-effect waves-light btn orange" type="button" onclick="JavaScript:location.href='edtoperador.php?id=' +
                                      <?php echo $operador->getId(); ?>">
                         Editar <i class="material-icons">edit</i>
                     </button>
 
-                    <button class="waves-effect waves-light btn red" type="button"
-                          onclick="JavaScript: remover( <?php echo $operador->getId(); ?>)">
+                    <button class="waves-effect waves-light btn red" type="button" onclick="JavaScript: remover( <?php echo $operador->getId(); ?>)">
                         Remover <i class="material-icons">delete_forever</i>
                     </button>
 
-                    <button class="waves-effect waves-light btn blue" type="button"
-                          onclick="JavaScript:location.href='lstoperador2.php'">
+                    <button class="waves-effect waves-light btn blue" type="button" onclick="JavaScript:location.href='lstoperador2.php'">
                         Listar <i class="material-icons">arrow_back</i>
                     </button>
                     <br>
@@ -76,13 +74,14 @@ $operador = $bll->SelectID($id);
         </div>
     </div>
 </body>
+<?php include_once '../footer.php'; ?>
 
 </html>
 
 <script>
-function remover(id) {
-    if (confirm('Excluir o Operador ' + id + '?')) {
-        location.href = 'remoperador.php?id=' + id;
+    function remover(id) {
+        if (confirm('Excluir o Operador ' + id + '?')) {
+            location.href = 'remoperador.php?id=' + id;
+        }
     }
-}
 </script>
