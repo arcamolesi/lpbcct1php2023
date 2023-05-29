@@ -5,12 +5,22 @@
     $senha = trim($_POST['senha']); 
 
     echo "Usuario: " . $usuario . "</br>"; 
-    echo "Senha: " . $senha. "</br>" . "</br>";
+    echo "Senha: " . md5($senha) . "</br>" . "</br>";
 
     $bll = new  \BLL\bllUsuario();
     $objUsuario = $bll->SelectUser($usuario);
 
-    echo "Usuario BD: " . $objUsuario->getUsuario() . "</br>"; 
-    echo "Senha BD" . $objUsuario->getSenha();
+ 
+  if ($objUsuario != null){
+       if (md5($senha) == $objUsuario->getSenha() ){
+        //echo "Usuario BD: " . $objUsuario->getUsuario() . "</br>"; 
+       // echo "Senha BD: " . $objUsuario->getSenha();
+          session_start();
+          $_SESSION['login'] =  $objUsuario->getUsuario() ;
+          header("location:menu.php");
+       }
+       else  header("location:index.php");
+  }
+  else  header("location:index.php");
 
 ?>
