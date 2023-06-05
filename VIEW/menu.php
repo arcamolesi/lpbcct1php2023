@@ -33,7 +33,7 @@
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="/lpbcct1php2023/VIEW/operador/lstoperador2.php">Operador</a></li>
                 <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
+                <li><a href="/lpbcct1php2023/VIEW/area/lstarea.php">Area</a></li>
                 <li><a href="/lpbcct1php2023/view/logout.php">Logout</a></li>
             </ul>
         </div>
