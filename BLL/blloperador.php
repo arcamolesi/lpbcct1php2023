@@ -20,7 +20,11 @@
         }
 
         
-
+        public function SelectNome(string $nome){
+            $daloperador = new dalOperador(); 
+            return $daloperador->SelectNome($nome);
+        }
+ 
         public function Insert (\MODEL\Operador $operador){
            
             //echo "Nome: {$operador->getNome()} </br>"; 
