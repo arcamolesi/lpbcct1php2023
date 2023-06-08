@@ -39,15 +39,15 @@
                     <select id="slcTipo" name="slcTipoArea">
                         <option value="" disabled selected>Escolha um Tipo Area</option>
                         <?php  // carregar lista no select option
-                           $bll = new \bll\bllTipoArea();
-                           $lstTipoArea = $bll->Select();
+                        $bll = new \bll\bllTipoArea();
+                        $lstTipoArea = $bll->Select();
                         ?>
                         <?php
-                           foreach ($lstTipoArea as $tipoArea) {
+                        foreach ($lstTipoArea as $tipoArea) {
                         ?>
                             <option value="<?php echo $tipoArea->getId(); ?>"><?php echo $tipoArea->getDescricao(); ?></option>
                         <?php
-                          }
+                        }
                         ?>
                     </select>
                     <label for="lbltipo" class="black-text bold">Informe o Tipo:</label>
@@ -78,12 +78,7 @@
     <br>
     <br>
 
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/view/js/materialize.js"></script>
-    <script src="/view/js/init.js"></script>
-
 </body>
-<!-- <?php include_once '../footer.php' ?> -->
+<?php include_once '../footer.php' ?>
 
 </html>
