@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
+    <script src="/view/js/init.js"></script>
     <title>Menu Principal de Operadores</title>
 </head>
 
@@ -30,7 +30,7 @@
             <a href="#" class="brand-logo right">
                 <img src="/lpbcct1php2023/VIEW/imagens/logocarro.jpg" alt="" width="80" height="100">
             </a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <ul id="nav-mobile" class="left hide-on-med-and-down" >
                 <li><a href="/lpbcct1php2023/VIEW/operador/lstoperador2.php">Operador</a></li>
                 <li><a href="badges.html">Components</a></li>
                 <li><a href="/lpbcct1php2023/VIEW/area/lstarea.php">Area</a></li>
@@ -40,7 +40,13 @@
        
     </nav>
 
+
     <p>Usuario: <?php echo $_SESSION['login']?></p>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="/view/js/materialize.js"></script>
+  <script src="../init.js"></script>
+
 </body>
 
 </html>
